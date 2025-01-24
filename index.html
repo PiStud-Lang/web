@@ -103,6 +103,11 @@
                         <strong>GitHub</strong>
                         <p>Find the source code and contribute to the Pust project on our <a href='https://github.com/pust-lang/pust'>GitHub repository</a>.</p>
                     `;
+                case 'update':
+                    content.innerHTML = `
+                        <strong>Update log:</strong>
+                        <p>Added wo("") to open websites with the url inbetween.</p>
+                    `;
                     break;
                 case 'readme':
                     content.innerHTML = `
@@ -136,6 +141,7 @@
 
         <div class="nav">
             <button onclick="showSection('github')">GitHub</button>
+            <button onclick="showSection('update')">Update Log</button>
             <button onclick="showSection('readme')">README</button>
             <button onclick="showSection('license')">License</button>
             <button onclick="showSection('about')">About</button>
@@ -147,7 +153,7 @@
         </div>
 
         <footer>
-            &copy; 2025 Pust Project | Designed for simplicity and performance.
+            &copy; 2025 - present, The Pust Language | Designed for software engineering and simplicity. <br> 
         </footer>
     </div>
 </body>
