@@ -149,6 +149,12 @@
                         <p>To run Python code in PiStud, use the format: <code>py("python code")</code>.</p>
                     `;
                     break;
+                case 'NewKey':
+                    content.innerHTML = `
+                        <h2>NewKey</h2>
+                        <p>A newkey is besicly creating a "function" or a keyword in a function, but you must know the supported version of pistud has a diffrent way of using newkey, like this: Normal, <code>newkey("callhello", "pln('Hello World!')")</code> Supported, <code>ps.newkey("callhello", "pln('Hello World!')")</code>, yes you need to do it outside of functions</p>
+                    `;
+                    break;
                 case 'Os':
                     content.innerHTML = `
                         <h2>Os</h2>
