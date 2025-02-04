@@ -191,6 +191,12 @@
                         <p>To create a window, use <code>cv("windowName", cw("WindowTitle", "400x300"))</code> and show it with <code>wl("windowName")</code>.</p>
                     `;
                     break;
+                case 'Math':
+                    content.innerHTML = `
+                        <h2>Math</h2>
+                        <p>Math, as it says "math" is where you can do math, like 9 + 10, to use Math do <code>math("1 + 1")</code> and to print it, do <code>let("result", math("1+1")) (new line) pln("{result}")</code> it also works with inputs too! Just save the input with let() and then use {var}!.</p>
+                    `;
+                    break;
             }
         }
     </script>
@@ -218,6 +224,8 @@
             <button onclick="showSection('Variables')">Variables</button>
             <button onclick="showSection('Message Box')">Message Box</button>
             <button onclick="showSection('Window')">Window</button>
+            <button onclick="showSection('NewKey')">NewKey</button>
+            <button onclick="showSection('Math')">Math</button>
         </div>
 
         <div class="sections" id="content">
